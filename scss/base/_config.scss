@@ -1,0 +1,20 @@
+@include font("Manrope", "Manrope-Light", "300", "normal");
+@include font("Manrope", "Manrope-Regular", "400", "normal");
+@include font("Manrope", "Manrope-Medium", "500", "normal");
+@include font("Manrope", "Manrope-ExtraBold", "800", "normal");
+@include font("Manrope", "Manrope-Bold", "700", "normal");
+
+body {
+	min-width: 320px;
+	font-family: 'Manrope', sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	color: $main;
+	background-color: $white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
