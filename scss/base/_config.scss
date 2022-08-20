@@ -3,6 +3,7 @@
 @include font("Manrope", "Manrope-Medium", "500", "normal");
 @include font("Manrope", "Manrope-ExtraBold", "800", "normal");
 @include font("Manrope", "Manrope-Bold", "700", "normal");
+@include font("MedulaOne", "MedulaOne-Regular", "400", "normal");
 
 body {
 	min-width: 320px;
@@ -17,4 +18,8 @@ img {
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+
+::root {
+	--header-size: 155px;
 }

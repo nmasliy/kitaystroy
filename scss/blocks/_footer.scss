@@ -1,3 +1,84 @@
 .footer {
 	margin-top: auto;
+	background-color: #283640;
+	color: $white;
+	
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 40px 20px;
+		padding: 66px 0 52px;
+	}
+
+	&__col {
+		max-width: 285px;
+	}
+
+	&__logo {
+		margin-bottom: 33px;
+		img {
+			width: 285px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 1.43;
+	}
+
+	&__navigation {
+		& > ul {
+			& > li {
+				font-size: 15px;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& > a {
+					transition: $transition;
+					&:hover {
+					color: $accent;
+				}
+				}
+			}
+		}
+	}
+
+	&__contact {
+		display: flex;
+		align-items: center;
+		margin-bottom: 27px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__contact-icon {
+		flex-shrink: 0;
+	}
+
+	&__contact-info {
+		margin-left: 15px;
+	}
+
+	&__contact-caption {
+		font-size: 14px;
+		color: #E8E8E8;
+		margin-bottom: 4px;
+	}
+
+	&__contact-text {
+		font-size: 15px;
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__bottom {
+		font-size: 15px;
+		line-height: 1.33;
+		padding: 30px 0;
+		border-top: 1px solid #304048;
+	}
 }

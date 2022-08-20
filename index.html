@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,441 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Home</title>
 </head>
+
 <body>
 	<div class="page">
 		<div class="page__top">
 			<header class="header">
 				<div class="container">
 					<div class="header__inner">
-						Header
+						<div class="header__top">
+							<a class="header__logo" href="#">
+								<img src="img/logo.svg" width="372" height="50" alt="Логотип ООО КитайСтрой">
+							</a>
+							<form class="header__search" action="#">
+								<input type="search" placeholder="Что ищем?">
+								<button type="submit">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+											stroke="#139DFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#139DFE" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</form>
+							<div class="header__languages">
+								<ul>
+									<li class="active"><a href="#">RU</a></li>
+									<li><a href="#">Ch</a></li>
+								</ul>
+							</div>
+						</div>
+						<nav class="header__navigation navigation">
+							<ul class="navigation__list">
+								<li>
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Строительство жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Проекты</a>
+									<ul>
+										<li><a href="#">Проекты жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+									<ul>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Сертификаты</a>
+								</li>
+								<li>
+									<a href="#">Сферы деятельности</a>
+									<ul>
+										<li><a href="#">Сферы</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+									<ul>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</header>
 			<section class="hero">
 				<div class="container">
 					<div class="hero__inner">
-						Hero
+						<div class="hero__content">
+							<div class="hero__box">
+								<h1 class="hero__title page__title">Крупнейшая инвестиционная <br> группа в мире</h1>
+								<div class="hero__text">
+									Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа, а
+									высота здания
+									выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он предложил
+									новаторскую
+									технологию строительства, при которой впервые был использован несущий каркас.
+								</div>
+							</div>
+							<div class="hero__benefits">
+								<ul>
+									<li>
+										<span>90%</span>
+										<p>Более 90% небоскребов выше 300м в Китае</p>
+									</li>
+									<li>
+										<span>100</span>
+										<p>Более 100 стран и регионов присутствия</p>
+									</li>
+									<li>
+										<span>18</span>
+										<p>Занимаем 18 место в ТОП500 крупнейших компаний в мире</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev hero__prev"></div>
+						<div class="slider-arrows__next hero__next"></div>
 					</div>
 				</div>
 			</section>
 		</div>
 		<div class="page__content">
-			Content
+			<section class="news section">
+				<div class="container">
+					<div class="news__inner">
+						<div class="news__info">
+							<h2 class="news__title section-title-sm">Строительство крупнейших объектов по всему миру</h2>
+							<div class="news__text">Уникальная китайская холдинговая компания, которая занимается почти всем: от
+								производства автомобилей и добычи нефти до строительства гражданских объектов. Ежегодная выручка
+								компании превышает $61 млрд, в штате трудится свыше 240 тысяч сотрудников по всему миру.</div>
+								<a class="news__btn btn" href="#">Все новости</a>
+						</div>
+						<div class="news-slider swiper">
+							<div class="news-slider__wrapper swiper-wrapper">
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-1.webp"type="image/webp">
+											<source srcset="img/news-1.jpg" type="image/jpeg">
+											<img width="340" height="380" src="img/news-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Аэропорт в Европе на 58 самолетов, 5000 пассажиров</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-2.webp"type="image/webp">
+											<source srcset="img/news-2.jpg" type="image/jpeg">
+											<img width="340" height="380" src="img/news-2.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Высотное зданиче на 86 этажей в Москве на набережной</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-3.webp"type="image/webp">
+											<source srcset="img/news-3.jpg" type="image/jpeg">
+											<img width="495" height="740" src="img/news-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Высотки на набережной</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-1.webp"type="image/webp">
+											<source srcset="img/news-1.jpg" type="image/jpeg">
+											<img width="340" height="380" src="img/news-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Аэропорт в Европе на 58 самолетов, 5000 пассажиров</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-2.webp"type="image/webp">
+											<source srcset="img/news-2.jpg" type="image/jpeg">
+											<img width="340" height="380" src="img/news-2.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Высотное зданиче на 86 этажей в Москве на набережной</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+								<div class="news-slider__item swiper-slide">
+									<div class="news-slider__img">
+										<picture>
+											<source srcset="img/news-3.webp"type="image/webp">
+											<source srcset="img/news-3.jpg" type="image/jpeg">
+											<img width="495" height="740" src="img/news-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="news-slider__info">
+										<a class="news-slider__title" href="#">Высотки на набережной</a>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev news__prev"></div>
+						<div class="slider-arrows__next news__next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="directions section">
+				<div class="container">
+					<div class="directions__inner">
+						<h3 class="directions__title section-title">Основные направления деятельности</h3>
+						<ul class="directions__list">
+							<li class="directions__item">
+								<a class="directions__item-inner" href="#">
+									<div class="directions__img">
+										<picture>
+											<source srcset="img/directions-1.webp"type="image/webp">
+											<source srcset="img/directions-1.jpg" type="image/jpeg">
+											<img width="390" height="240" src="img/directions-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="directions__info">
+										<h6 class="directions__name">Строительство жилья</h6>
+										<div class="directions__text">
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти до
+											строительства гражданских объектов.
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="directions__item">
+								<a class="directions__item-inner" href="#">
+									<div class="directions__img">
+										<picture>
+											<source srcset="img/directions-2.webp"type="image/webp">
+											<source srcset="img/directions-2.jpg" type="image/jpeg">
+											<img width="390" height="240" src="img/directions-2.jpg" alt="">
+										</picture>
+									</div>
+									<div class="directions__info">
+										<h6 class="directions__name">Инфраструктура</h6>
+										<div class="directions__text">
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти
+											до
+											строительства гражданских объектов.
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="directions__item">
+								<a class="directions__item-inner" href="#">
+									<div class="directions__img">
+										<picture>
+											<source srcset="img/directions-3.webp"type="image/webp">
+											<source srcset="img/directions-3.jpg" type="image/jpeg">
+											<img width="390" height="240" src="img/directions-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="directions__info">
+										<h6 class="directions__name">Нефтегаз</h6>
+										<div class="directions__text">
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти
+											до
+											строительства гражданских объектов.
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="projects-slider section">
+				<div class="container">
+					<h3 class="projects-slider__title section-title">Проекты</h3>
+				</div>
+				<div class="container">
+					<div class="projects-slider__inner">
+						<div class="projects-slider__content swiper">
+							<div class="swiper-wrapper">
+								<div class="projects-slider__item swiper-slide">
+									<div class="projects-slider__img">
+										<picture>
+											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.jpg" type="image/jpeg">
+											<img width="615" height="520" src="img/projects.jpg" alt="">
+										</picture>
+									</div>
+									<div class="projects-slider__info">
+										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
+										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
+										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
+										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__desc">
+											<ul>
+												<li>
+													<img width="24" height="24" src="img/date-icon.svg" alt="">
+													<span>Дата постройки: 10.01.2019</span>
+												</li>
+												<li>
+													<img width="24" height="24" src="img/address-icon.svg" alt="">
+													<span>Адрес: г.Москва, ул.Правды, дом 1</span>
+												</li>
+											</ul>
+										</div>
+										<a class="projects-slider__btn btn" href="#">Подробнее</a>
+									</div>
+								</div>
+								<div class="projects-slider__item swiper-slide">
+									<div class="projects-slider__img">
+										<picture>
+											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.jpg" type="image/jpeg">
+											<img width="615" height="520" src="img/projects.jpg" alt="">
+										</picture>
+									</div>
+									<div class="projects-slider__info">
+										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
+										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
+										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
+										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__desc">
+											<ul>
+												<li>
+													<img width="24" height="24" src="img/date-icon.svg" alt="">
+													<span>Дата постройки: 10.01.2019</span>
+												</li>
+												<li>
+													<img width="24" height="24" src="img/address-icon.svg" alt="">
+													<span>Адрес: г.Москва, ул.Правды, дом 1</span>
+												</li>
+											</ul>
+										</div>
+										<a class="projects-slider__btn btn" href="#">Подробнее</a>
+									</div>
+								</div>
+								<div class="projects-slider__item swiper-slide">
+									<div class="projects-slider__img">
+										<picture>
+											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.jpg" type="image/jpeg">
+											<img width="615" height="520" src="img/projects.jpg" alt="">
+										</picture>
+									</div>
+									<div class="projects-slider__info">
+										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
+										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
+										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
+										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__desc">
+											<ul>
+												<li>
+													<img width="24" height="24" src="img/date-icon.svg" alt="">
+													<span>Дата постройки: 10.01.2019</span>
+												</li>
+												<li>
+													<img width="24" height="24" src="img/address-icon.svg" alt="">
+													<span>Адрес: г.Москва, ул.Правды, дом 1</span>
+												</li>
+											</ul>
+										</div>
+										<a class="projects-slider__btn btn" href="#">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-arrows">
+							<div class="slider-arrows__prev projects-slider__prev"></div>
+							<div class="slider-arrows__next projects-slider__next"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">
-					Header
+					<div class="footer__col">
+						<a class="footer__logo logo" href="#">
+							<img src="img/logo-white.svg" width="285" height="39" alt="">
+						</a>
+						<div class="footer__text">Тут какой-то текст компании, слоган, или еще что-то для сео, восможно в две или три строчки, но не более.</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Проекты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Сертификаты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">Сферы деятельности</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/bookmark-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Как нас найти</div>
+								<div class="footer__contact-text">Москва, Соколово Мещерская ул., дом 14, строение 11</div>
+							</div>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/mail-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Написать нам</div>
+								<div class="footer__contact-text"><a href="mailto:chinastroy@info.com">chinastroy@info.com</a></div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<div class="footer__bottom">© 2022 Китай Строй, Все права защищены</div>
 			</div>
 		</footer>
 	</div>
@@ -42,4 +452,5 @@
 	<script src="js/micromodal.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

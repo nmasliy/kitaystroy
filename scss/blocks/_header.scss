@@ -1,23 +1,94 @@
 $menuTransition: 0.25s ease-in-out;
 
 .header {
-	padding: 24px 0;
+	padding: 35px 0 30px;
 
-	&__inner {
+	&__top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+		gap: 0 49px;
+		margin-bottom: 35px;
 	}
 
 	&__burger {
 		display: none;
-		
 	}
 
 	&__logo {
 		img {
-			width: 84px;
+			width: 372px;
+		}
+	}
+
+	&__search {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		border: 1px solid #e8e8e8;
+		padding-right: 18px;
+		border-radius: 6px;
+
+		& > button {
+			display: flex;
+			cursor: pointer;
+		}
+
+		& > input {
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.01);
+			padding: 13px 18px;
+
+			&::-webkit-search-decoration,
+			&::-webkit-search-cancel-button,
+			&::-webkit-search-results-button,
+			&::-webkit-search-results-decoration {
+				display: none;
+			}
+			&::placeholder {
+				color: $text;
+			}
+			&:focus,
+			&:active {
+				&::placeholder {
+					color: $black;
+				}
+				& ~ button > svg > path {
+					stroke: $mainHover;
+				}
+			}
+		}
+	}
+
+	&__languages {
+		& > ul {
+			display: flex;
+			& > li {
+				font-weight: 800;
+				font-size: 14px;
+				line-height: 1.43;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				border-radius: 6px 0px 0px 6px;
+				background: rgba(255, 255, 255, 0.01);
+				border: 1px solid #e8e8e8;
+				& > a {
+					display: block;
+					padding: 15px;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				&.active {
+					color: $white;
+					background-color: $main;
+					border: transparent;
+				}
+				&:last-child {
+					border-radius: 0 6px 6px 0;
+				}
+			}
 		}
 	}
 
@@ -41,7 +112,7 @@ $menuTransition: 0.25s ease-in-out;
 		width: 100%;
 		height: 100%;
 		opacity: 0;
-		background-color: rgba(0, 0, 0, .6);
+		background-color: rgba(0, 0, 0, 0.6);
 		&.active {
 			opacity: 1;
 		}
@@ -51,11 +122,55 @@ $menuTransition: 0.25s ease-in-out;
 .navigation {
 	&__list {
 		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+		background-color: $main;
+		border-radius: 10px;
+		position: relative;
 
-		li {
-			
+		a {
+			display: block;
+			font-weight: 500;
+			color: $white;
+			font-size: 15px;
+		}
+
+		& > li {
+			background-color: $main;
+			flex-grow: 1;
+			border-radius: 10px;
+			transition: $transition;
+
+			& > a {
+				padding: 25px 43px;
+			}
+			& > ul {
+				position: absolute;
+				display: none;
+				background-color: $mainHover;
+				border-radius: 0 0 10px 10px;
+				top: calc(100% - 10px);
+				left: 0;
+				right: 0;
+				z-index: 6;
+				& > li {
+					& > a {
+						padding: 30px 43px;
+						text-decoration: underline;
+						line-height: 1.3;
+						transition: $transition;
+					}
+					&:hover {
+						a {
+							color: $accent;
+						}
+					}
+				}
+			}
+			&:hover {
+				background-color: $mainHover;
+				& > ul {
+					display: flex;
+				}
+			}
 		}
 	}
 }
