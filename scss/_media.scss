@@ -330,6 +330,11 @@
 			gap: 35px;
 		}
 	}
+	.map {
+		&__inner {
+			padding: 60px 0;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -347,6 +352,14 @@
 		&__title {
 			font-size: 26px;
 		}
+	}
+	.page-head {
+		&__info {
+			padding-bottom: 60px;
+		}
+	}
+	.gas {
+		margin-top: 45px;
 	}
 	body {
 		font-size: 16px;
@@ -403,6 +416,7 @@
 		&__info {
 			width: 100%;
 			padding: 0;
+			border: none;
 		}
 		&__prev {
 			left: 40px;
@@ -520,6 +534,9 @@
 				}
 			}
 		}
+	}
+	.directions__img--big img {
+    height: 240px;
 	}
 	.news-slider {
 		height: 350px;
