@@ -23,6 +23,7 @@
 		font-size: 36px;
 		line-height: 1.4;
 		letter-spacing: -1px;
+		margin-bottom: 20px;
 	}
 
 	&__content {
@@ -63,6 +64,7 @@
 		font-size: 34px;
 		line-height: 1.35;
 		letter-spacing: -1px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -71,7 +73,6 @@
 	padding: 22px 30px;
 	text-align: center;
 	cursor: pointer;
-	// border: 1px solid transparent;
 	background: rgba(255, 255, 255, 0.01);
 	border: 1px solid #e8e8e8;
 	border-radius: 4px;
@@ -181,5 +182,29 @@
 		right: -50px;
 		transform: rotate(180deg) translateY(-50%);
 		transform-origin: top;
+	}
+}
+
+.breadcrumbs {
+	margin-bottom: 25px;
+	li {
+		display: inline;
+		position: relative;
+		font-size: 13px;
+		line-height: 1.85;
+		transition: $transition;
+		color: #BDBDBD;
+		& + li::before {
+			content: "/";
+			display: inline-block;
+			margin: 0 8px;
+			color: #BDBDBD;
+		}
+		&:last-child {
+			color: #1B1B1B;
+		}
+		&:hover {
+			color: $accentHover;
+		}
 	}
 }
