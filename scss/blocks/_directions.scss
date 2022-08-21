@@ -25,7 +25,9 @@
 	}
 
 	&__item-inner {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		&:hover {
 			.directions__name {
 				text-decoration: underline;
@@ -41,7 +43,8 @@
 	&__info {
 		padding: 30px 30px 35px;
 		border: 1px solid #E8E8E8;
-		border-radius: 0px 0px 10px 10px ;
+		border-radius: 0px 0px 10px 10px;
+		flex-grow: 1;
 	}
 
 	&__img {

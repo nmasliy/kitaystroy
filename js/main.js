@@ -65,6 +65,10 @@ window.addEventListener('DOMContentLoaded', function () {
 		const $header = document.querySelector('.header')
 
 		$root.style.setProperty('--header-size', $header.offsetHeight + 'px')
+		
+		window.addEventListener('resize', function() {
+			$root.style.setProperty('--header-size', $header.offsetHeight + 'px')
+		})
 	}
 
 	function initNewsSlider() {
@@ -80,19 +84,23 @@ window.addEventListener('DOMContentLoaded', function () {
 					nextEl: '.news__next',
 					prevEl: '.news__prev',
 				},
-				// breakpoints: {
-				// 	// when window width is >= 320px
-				// 	320: {
-				// 		slidesPerView: 'auto',
-				// 		centeredSlides: true,
-				// 	},
-				// 	// when window width is >= 768
-				// 	768: {
-				// 		slidesPerView: 1,
-				// 		spaceBetween: 16,
-				// 		centeredSlides: false,
-				// 	},
-				// },
+				breakpoints: {
+					// when window width is >= 320px
+					320: {
+						slidesPerView: 1,
+						slidesOffsetAfter: 0,
+					},
+					// when window width is >= 768
+					768: {
+						slidesPerView: 2,
+						slidesOffsetAfter: 0,
+					},
+					// when window width is >= 1024
+					1024: {
+						slidesOffsetAfter: 150,
+						slidesPerView: 'auto',
+					},
+				},
 			})
 		}
 	}
@@ -103,9 +111,25 @@ window.addEventListener('DOMContentLoaded', function () {
 		if ($projectsSlider) {
 			const swiper = new Swiper($projectsSlider, {
 				spaceBetween: 30,
+				autoHeight: true,
 				navigation: {
 					nextEl: '.projects-slider__next',
 					prevEl: '.projects-slider__prev',
+				},
+			})
+		}
+	}
+
+	function initHeroSlider() {
+		const $heroSlider = document.querySelector('.hero__slider')
+
+		if ($heroSlider) {
+			const swiper = new Swiper($heroSlider, {
+				spaceBetween: 50,
+				autoHeight: true,
+				navigation: {
+					nextEl: '.hero__prev',
+					prevEl: '.hero__next',
 				},
 			})
 		}
@@ -120,4 +144,5 @@ window.addEventListener('DOMContentLoaded', function () {
 	initNewsSlider()
 	initProjectsSlider()
 	initGetHeaderSize()
+	initHeroSlider()
 })

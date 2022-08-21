@@ -1,7 +1,8 @@
 .container {
-	max-width: 1260px;
+	max-width: 1450px;
 	margin: 0 auto;
-	padding: 0 15px;
+	// padding: 0 15px;
+	padding: 0 110px;
 }
 
 .logo {
@@ -128,6 +129,10 @@
 		outline: none;
 		z-index: 3;
 
+		&.swiper-button-disabled {
+			opacity: 0.6;
+		}
+
 		&::before {
 			position: absolute;
 			content: '';
@@ -154,7 +159,7 @@
 			border-radius: 10px;
 			transition: $transition;
 		}
-		&:hover {
+		&:not(.swiper-button-disabled):hover {
 			&::after {
 				background-color: $accentHover;
 			}
@@ -169,11 +174,11 @@
 	}
 
 	&__prev {
-		left: -140px;
+		left: -50px;
 	}
 
 	&__next {
-		right: -140px;
+		right: -50px;
 		transform: rotate(180deg) translateY(-50%);
 		transform-origin: top;
 	}
