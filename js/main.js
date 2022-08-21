@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
 	function initMenu() {
 		const $html = document.querySelector('html')
-		const $headerMenu = document.querySelector('.header__menu')
+		const $headerMenu = document.querySelector('.header__inner')
 		const $navLinks = $headerMenu.querySelectorAll(
-			'.header__navigation ul li a'
+			'.navigation__list>li>a'
 		)
 		const $headerBtn = document.querySelector('.header__burger')
 		const $headerCloseBtn = document.querySelector('.header__close')
@@ -21,7 +21,14 @@ window.addEventListener('DOMContentLoaded', function () {
 				$headerCloseBtn.addEventListener('click', closeMenu)
 				$headerOverlay.addEventListener('click', closeMenu)
 				$navLinks.forEach(item => {
-					item.addEventListener('click', closeMenu)
+					item.addEventListener('click', function(e) {
+						if (item.nextElementSibling) {
+							e.preventDefault()
+							item.closest('li').classList.toggle('active')
+							// item.nextElementSibling.classList.toggle('active')
+						}
+
+					})
 				})
 			} else {
 				window.addEventListener('resize', checkScreenWidth)
@@ -108,7 +115,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		const $modals = document.querySelectorAll('.modal')
 	}
 
-	// initMenu();
+	initMenu();
 	// initModals();
 	initNewsSlider()
 	initProjectsSlider()

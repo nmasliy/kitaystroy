@@ -1,5 +1,5 @@
 .hero {
-
+	margin-top: 50px;
 	.container {
 		position: relative;
 	}
@@ -7,7 +7,8 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		min-height: calc(100vh - var(--header-size));
+		// min-height: calc(100vh - var(--header-size));
+		min-height: calc(1020px - var(--header-size) - 50px);
 		padding-bottom: 160px;
 	}
 
@@ -46,6 +47,7 @@
 					font-size: 80px;
 					line-height: 0.8;
 					color: $main;
+					letter-spacing: normal;
 					font-family: 'MedulaOne', sans-serif;
 				}
 				& > p {
