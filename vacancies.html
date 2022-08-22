@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Вакансии</title>
+</head>
+
+<body>
+	<div class="page">
+		<style>
+			.page__top {
+				background: url('img/vacancies-bg.png') no-repeat center / cover;
+			}
+
+			@supports (-webkit-appearance:none) {
+				.page__top {
+					background-image: url('img/vacancies-bg.webp');
+				}
+			}
+		</style>
+		<div class="page__top">
+			<header class="header">
+				<div class="container">
+					<div class="header__menu">
+						<a class="header__logo" href="#">
+							<img src="img/logo.svg" width="280" height="40" alt="Логотип ООО КитайСтрой">
+						</a>
+						<div class="header__burger">
+							<img width="50" height="50" src="img/burger-icon.svg" alt="open menu">
+						</div>
+					</div>
+					<div class="header__inner">
+						<div class="header__top">
+							<a class="header__logo" href="#">
+								<img src="img/logo.svg" width="372" height="50" alt="Логотип ООО КитайСтрой">
+							</a>
+							<form class="header__search" action="#">
+								<input type="search" placeholder="Что ищем?">
+								<button type="submit">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+											stroke="#139DFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#139DFE" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</form>
+							<div class="header__languages">
+								<ul>
+									<li class="active"><a href="#">RU</a></li>
+									<li><a href="#">Ch</a></li>
+								</ul>
+							</div>
+						</div>
+						<nav class="header__navigation navigation">
+							<ul class="navigation__list">
+								<li>
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Строительство жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Проекты</a>
+									<ul>
+										<li><a href="#">Проекты жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+									<ul>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Сертификаты</a>
+								</li>
+								<li>
+									<a href="#">Сферы деятельности</a>
+									<ul>
+										<li><a href="#">Сферы</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+									<ul>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__close"><img width="50" height="50" src="img/burger-close-icon.svg" alt=""></div>
+					<div class="header__overlay"></div>
+				</div>
+			</header>
+			<section class="page-head">
+				<div class="container">
+					<div class="page-head__inner">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">На странице</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="page__content">
+			<section class="vacancies">
+				<div class="container">
+					<div class="vacancies__inner">
+						<h1 class="page__title vacancies__title">Приглашаем на работу</h1>
+						<ul class="vacancies__list">
+							<li class="vacancies__item">
+								<div class="vacancies__text">Менеджер по работе с Клиентами</div>
+								<div class="vacancies__info">
+									<div class="vacancies__date"><time datetime="2022-02-18">18.02.2022</time></div>
+									<a class="vacancies__btn btn btn--sm" href="#">Подробнее</a>
+								</div>
+							</li>
+							<li class="vacancies__item">
+								<div class="vacancies__text">Менеджер по работе с Клиентами</div>
+								<div class="vacancies__info">
+									<div class="vacancies__date"><time datetime="2022-02-18">18.02.2022</time></div>
+									<a class="vacancies__btn btn btn--sm" href="#">Подробнее</a>
+								</div>
+							</li>
+							<li class="vacancies__item">
+								<div class="vacancies__text">Менеджер по работе с Клиентами</div>
+								<div class="vacancies__info">
+									<div class="vacancies__date"><time datetime="2022-02-18">18.02.2022</time></div>
+									<a class="vacancies__btn btn btn--sm" href="#">Подробнее</a>
+								</div>
+							</li>
+							<li class="vacancies__item">
+								<div class="vacancies__text">Менеджер по работе с Клиентами</div>
+								<div class="vacancies__info">
+									<div class="vacancies__date"><time datetime="2022-02-18">18.02.2022</time></div>
+									<a class="vacancies__btn btn btn--sm" href="#">Подробнее</a>
+								</div>
+							</li>
+							<li class="vacancies__item">
+								<div class="vacancies__text">Менеджер по работе с Клиентами</div>
+								<div class="vacancies__info">
+									<div class="vacancies__date"><time datetime="2022-02-18">18.02.2022</time></div>
+									<a class="vacancies__btn btn btn--sm" href="#">Подробнее</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<a class="footer__logo logo" href="#">
+							<img src="img/logo-white.svg" width="285" height="39" alt="">
+						</a>
+						<div class="footer__text">Тут какой-то текст компании, слоган, или еще что-то для сео, восможно в две или
+							три строчки, но не более.</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Проекты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Сертификаты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">Сферы деятельности</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/bookmark-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Как нас найти</div>
+								<div class="footer__contact-text">Москва, Соколово Мещерская ул., дом 14, строение 11</div>
+							</div>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/mail-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Написать нам</div>
+								<div class="footer__contact-text"><a href="mailto:chinastroy@info.com">chinastroy@info.com</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">© 2022 Китай Строй, Все права защищены</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/fslightbox.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/micromodal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

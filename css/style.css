@@ -1607,6 +1607,52 @@ img {
 .contacts-map [class*=copyrights-pane] {
   display: none !important;
 }
+.vacancies {
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+.vacancies__title {
+  margin-bottom: 50px;
+}
+.vacancies__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #F2F2F2;
+  border-radius: 6px;
+  padding: 14px 14px 14px 32px;
+  margin-bottom: 15px;
+}
+.vacancies__text {
+  font-weight: 500;
+  font-size: 15px;
+}
+.vacancies__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.vacancies__date {
+  font-weight: 500;
+  font-size: 15px;
+}
+.vacancies__btn {
+  margin-left: 40px;
+}
+
 .footer {
   margin-top: auto;
   background-color: #283640;
@@ -2517,6 +2563,16 @@ img {
   }
   .contact__info {
     margin-left: 10px;
+  }
+
+  .vacancies {
+    margin: 50px 0;
+  }
+  .vacancies__item {
+    padding: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 650px) {

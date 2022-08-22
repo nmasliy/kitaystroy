@@ -1,0 +1,40 @@
+.vacancies {
+	margin-top: 80px;
+	margin-bottom: 70px;
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	&__item {
+		display: flex;
+		gap: 15px 30px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		background-color: $white;
+		border: 1px solid #F2F2F2;
+		border-radius: 6px;
+		padding: 14px 14px 14px 32px;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 15px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__date {
+		font-weight: 500;
+		font-size: 15px;
+	}
+
+	&__btn {
+		margin-left: 40px;
+	}
+}
