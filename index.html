@@ -11,17 +11,18 @@
 </head>
 
 <body>
-	<div class="page">
-		<style>
+	<style>
+		.page__top {
+			background: url('img/main-bg.png') no-repeat center / cover;
+		}
+
+		@supports (-webkit-appearance:none) {
 			.page__top {
-				background: url('img/main-bg.png') no-repeat center / cover;
+				background-image: url('img/main-bg.webp');
 			}
-			@supports (-webkit-appearance:none) {
-				.page__top {
-					background-image: url('img/main-bg.webp');
-				}
-			}
-		</style>
+		}
+	</style>
+	<div class="page">
 		<div class="page__top">
 			<header class="header">
 				<div class="container">
@@ -118,9 +119,11 @@
 									<div class="hero__box swiper-slide">
 										<h1 class="hero__title page__title">Крупнейшая инвестиционная <br> группа в мире</h1>
 										<div class="hero__text">
-											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа, а
+											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа,
+											а
 											высота здания
-											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он предложил
+											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он
+											предложил
 											новаторскую
 											технологию строительства, при которой впервые был использован несущий каркас.
 										</div>
@@ -128,9 +131,11 @@
 									<div class="hero__box swiper-slide">
 										<h1 class="hero__title page__title">Крупнейшая инвестиционная <br> группа в мире</h1>
 										<div class="hero__text">
-											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа, а
+											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа,
+											а
 											высота здания
-											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он предложил
+											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он
+											предложил
 											новаторскую
 											технологию строительства, при которой впервые был использован несущий каркас.
 										</div>
@@ -138,9 +143,11 @@
 									<div class="hero__box swiper-slide">
 										<h1 class="hero__title page__title">Крупнейшая инвестиционная <br> группа в мире</h1>
 										<div class="hero__text">
-											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа, а
+											Первоначально оно имело всего 10 этажей и высоту 42 метра. Позднее были надстроены еще два этажа,
+											а
 											высота здания
-											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он предложил
+											выросла до 54,9 метра. Автор проекта — американский архитектор Уильям Ле Барон Дженни. Он
+											предложил
 											новаторскую
 											технологию строительства, при которой впервые был использован несущий каркас.
 										</div>
@@ -181,86 +188,92 @@
 							<div class="news__text">Уникальная китайская холдинговая <br> компания, которая занимается почти всем: от
 								производства автомобилей и добычи нефти до строительства гражданских объектов. Ежегодная выручка
 								компании превышает $61 млрд, в штате трудится свыше 240 тысяч сотрудников по всему миру.</div>
-								<a class="news__btn btn" href="#">Все новости</a>
+							<a class="news__btn btn" href="#">Все новости</a>
 						</div>
 						<div class="news-slider swiper">
 							<div class="news-slider__wrapper swiper-wrapper">
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-1.webp"type="image/webp">
+											<source srcset="img/news-1.webp" type="image/webp">
 											<source srcset="img/news-1.jpg" type="image/jpeg">
 											<img width="340" height="380" src="img/news-1.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Аэропорт в Европе на 58 самолетов, 5000 пассажиров</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-2.webp"type="image/webp">
+											<source srcset="img/news-2.webp" type="image/webp">
 											<source srcset="img/news-2.jpg" type="image/jpeg">
 											<img width="340" height="380" src="img/news-2.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Высотное зданиче на 86 этажей в Москве на набережной</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-3.webp"type="image/webp">
+											<source srcset="img/news-3.webp" type="image/webp">
 											<source srcset="img/news-3.jpg" type="image/jpeg">
 											<img width="495" height="740" src="img/news-3.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Высотки на набережной</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-1.webp"type="image/webp">
+											<source srcset="img/news-1.webp" type="image/webp">
 											<source srcset="img/news-1.jpg" type="image/jpeg">
 											<img width="340" height="380" src="img/news-1.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Аэропорт в Европе на 58 самолетов, 5000 пассажиров</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-2.webp"type="image/webp">
+											<source srcset="img/news-2.webp" type="image/webp">
 											<source srcset="img/news-2.jpg" type="image/jpeg">
 											<img width="340" height="380" src="img/news-2.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Высотное зданиче на 86 этажей в Москве на набережной</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 								<div class="news-slider__item swiper-slide">
 									<div class="news-slider__img">
 										<picture>
-											<source srcset="img/news-3.webp"type="image/webp">
+											<source srcset="img/news-3.webp" type="image/webp">
 											<source srcset="img/news-3.jpg" type="image/jpeg">
 											<img width="495" height="740" src="img/news-3.jpg" alt="">
 										</picture>
 									</div>
 									<div class="news-slider__info">
 										<a class="news-slider__title" href="#">Высотки на набережной</a>
-										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона</div>
+										<div class="news-slider__text">Классический текст-«рыба». Является искажённым отрывком из
+											философского трактата Марка Туллия Цицерона</div>
 									</div>
 								</div>
 							</div>
@@ -281,7 +294,7 @@
 								<a class="directions__item-inner" href="#">
 									<div class="directions__img">
 										<picture>
-											<source srcset="img/directions-1.webp"type="image/webp">
+											<source srcset="img/directions-1.webp" type="image/webp">
 											<source srcset="img/directions-1.jpg" type="image/jpeg">
 											<img width="390" height="240" src="img/directions-1.jpg" alt="">
 										</picture>
@@ -289,7 +302,8 @@
 									<div class="directions__info">
 										<h6 class="directions__name">Строительство жилья</h6>
 										<div class="directions__text">
-											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти до
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства
+											автомобилей и добычи нефти до
 											строительства гражданских объектов.
 										</div>
 									</div>
@@ -299,7 +313,7 @@
 								<a class="directions__item-inner" href="#">
 									<div class="directions__img">
 										<picture>
-											<source srcset="img/directions-2.webp"type="image/webp">
+											<source srcset="img/directions-2.webp" type="image/webp">
 											<source srcset="img/directions-2.jpg" type="image/jpeg">
 											<img width="390" height="240" src="img/directions-2.jpg" alt="">
 										</picture>
@@ -307,7 +321,8 @@
 									<div class="directions__info">
 										<h6 class="directions__name">Инфраструктура</h6>
 										<div class="directions__text">
-											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства
+											автомобилей и добычи нефти
 											до
 											строительства гражданских объектов.
 										</div>
@@ -318,7 +333,7 @@
 								<a class="directions__item-inner" href="#">
 									<div class="directions__img">
 										<picture>
-											<source srcset="img/directions-3.webp"type="image/webp">
+											<source srcset="img/directions-3.webp" type="image/webp">
 											<source srcset="img/directions-3.jpg" type="image/jpeg">
 											<img width="390" height="240" src="img/directions-3.jpg" alt="">
 										</picture>
@@ -326,7 +341,8 @@
 									<div class="directions__info">
 										<h6 class="directions__name">Нефтегаз</h6>
 										<div class="directions__text">
-											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства автомобилей и добычи нефти
+											Уникальная китайская холдинговая компания, которая занимается почти всем: от производства
+											автомобилей и добычи нефти
 											до
 											строительства гражданских объектов.
 										</div>
@@ -348,17 +364,20 @@
 								<div class="projects-slider__item swiper-slide">
 									<div class="projects-slider__img">
 										<picture>
-											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.webp" type="image/webp">
 											<source srcset="img/projects.jpg" type="image/jpeg">
 											<img width="615" height="520" src="img/projects.jpg" alt="">
 										</picture>
 									</div>
 									<div class="projects-slider__info">
 										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
-										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
-										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
-										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
-										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и
+											доступ ко всей инфраструктуре башни и Сити через клубное
+											лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в
+											Европе бассейн, а в
+											атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового
+											центра. Нет необходимости
+											тратить время в городских пробках – добраться до нужной организации.</div>
 										<div class="projects-slider__desc">
 											<ul>
 												<li>
@@ -377,17 +396,20 @@
 								<div class="projects-slider__item swiper-slide">
 									<div class="projects-slider__img">
 										<picture>
-											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.webp" type="image/webp">
 											<source srcset="img/projects.jpg" type="image/jpeg">
 											<img width="615" height="520" src="img/projects.jpg" alt="">
 										</picture>
 									</div>
 									<div class="projects-slider__info">
 										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
-										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
-										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
-										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
-										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и
+											доступ ко всей инфраструктуре башни и Сити через клубное
+											лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в
+											Европе бассейн, а в
+											атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового
+											центра. Нет необходимости
+											тратить время в городских пробках – добраться до нужной организации.</div>
 										<div class="projects-slider__desc">
 											<ul>
 												<li>
@@ -406,17 +428,20 @@
 								<div class="projects-slider__item swiper-slide">
 									<div class="projects-slider__img">
 										<picture>
-											<source srcset="img/projects.webp"type="image/webp">
+											<source srcset="img/projects.webp" type="image/webp">
 											<source srcset="img/projects.jpg" type="image/jpeg">
 											<img width="615" height="520" src="img/projects.jpg" alt="">
 										</picture>
 									</div>
 									<div class="projects-slider__info">
 										<div class="projects-slider__name">ЖК «Башенная Федерация»</div>
-										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и доступ ко всей инфраструктуре башни и Сити через клубное
-										лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в Европе бассейн, а в
-										атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового центра. Нет необходимости
-										тратить время в городских пробках – добраться до нужной организации.</div>
+										<div class="projects-slider__text">К услугам жителей апартаментов – безукоризненный room-service и
+											доступ ко всей инфраструктуре башни и Сити через клубное
+											лобби. На 61 этаже «Башни Федерация» находится wellness-club, видовой ресторан и самый высокий в
+											Европе бассейн, а в
+											атриуме башни – премиальный супермаркет и крупнейшая торговая галерея международного делового
+											центра. Нет необходимости
+											тратить время в городских пробках – добраться до нужной организации.</div>
 										<div class="projects-slider__desc">
 											<ul>
 												<li>
@@ -449,7 +474,8 @@
 						<a class="footer__logo logo" href="#">
 							<img src="img/logo-white.svg" width="285" height="39" alt="">
 						</a>
-						<div class="footer__text">Тут какой-то текст компании, слоган, или еще что-то для сео, восможно в две или три строчки, но не более.</div>
+						<div class="footer__text">Тут какой-то текст компании, слоган, или еще что-то для сео, восможно в две или
+							три строчки, но не более.</div>
 					</div>
 					<div class="footer__col">
 						<div class="footer__navigation">
