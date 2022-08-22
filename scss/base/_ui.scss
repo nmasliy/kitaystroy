@@ -17,6 +17,10 @@
 	min-height: 100vh;
 	overflow: hidden;
 
+	&-contacts {
+		background: linear-gradient(180deg, rgba(250, 251, 252, 0.98) 62.65%, rgba(255, 255, 255, 0) 100%);
+	}
+	
 	&__title {
 		font-weight: 700;
 		font-size: 36px;
@@ -32,15 +36,12 @@
 	&__top {
 		display: flex;
 		flex-direction: column;
-		background: url('../img/main-bg.png') bottom / cover no-repeat;
-		background-image: none;
-		@supports (-webkit-appearance: none) {
-			background-image: url('../img/main-bg.webp');
-		}
 	}
 }
 
 .page-head {
+	position: relative;
+	z-index: 2;
 	&__info {
 		padding-bottom: 124px;
 		max-width: 715px;
@@ -119,6 +120,23 @@
 		color: $white;
 		&::before {
 			width: 100%;
+		}
+	}
+	&-accent {
+		display: inline-block;
+		padding: 22px 40px;
+		text-align: center;
+		cursor: pointer;
+		background-color: $accent;;
+		border-radius: 6px;
+		color: $white;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.4;
+		transition: $transition;
+		&:hover,
+		&:active {
+			background-color: $accentHover;
 		}
 	}
 	&--sm {
