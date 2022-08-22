@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Новость</title>
+</head>
+
+<body>
+	<div class="page">
+		<style>
+			.page__top {
+				background: url('img/news-bg.png') no-repeat center / cover;
+			}
+
+			@supports (-webkit-appearance:none) {
+				.page__top {
+					background-image: url('img/news-bg.webp');
+				}
+			}
+		</style>
+		<div class="page__top">
+			<header class="header">
+				<div class="container">
+					<div class="header__menu">
+						<a class="header__logo" href="#">
+							<img src="img/logo.svg" width="280" height="40" alt="Логотип ООО КитайСтрой">
+						</a>
+						<div class="header__burger">
+							<img width="50" height="50" src="img/burger-icon.svg" alt="open menu">
+						</div>
+					</div>
+					<div class="header__inner">
+						<div class="header__top">
+							<a class="header__logo" href="#">
+								<img src="img/logo.svg" width="372" height="50" alt="Логотип ООО КитайСтрой">
+							</a>
+							<form class="header__search" action="#">
+								<input type="search" placeholder="Что ищем?">
+								<button type="submit">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+											stroke="#139DFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#139DFE" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</form>
+							<div class="header__languages">
+								<ul>
+									<li class="active"><a href="#">RU</a></li>
+									<li><a href="#">Ch</a></li>
+								</ul>
+							</div>
+						</div>
+						<nav class="header__navigation navigation">
+							<ul class="navigation__list">
+								<li>
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Строительство жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Проекты</a>
+									<ul>
+										<li><a href="#">Проекты жилья</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+									<ul>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Сертификаты</a>
+								</li>
+								<li>
+									<a href="#">Сферы деятельности</a>
+									<ul>
+										<li><a href="#">Сферы</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+									<ul>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Нефтегаз</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__close"><img width="50" height="50" src="img/burger-close-icon.svg" alt=""></div>
+					<div class="header__overlay"></div>
+				</div>
+			</header>
+			<section class="page-head">
+				<div class="container">
+					<div class="page-head__inner">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">На странице</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="page__content">
+			<section class="article">
+				<div class="container">
+					<div class="article__inner">
+						<h1 class="article__title page__title">Власти Москвы одобрили проект застройки Лужнецкой набережной</h1>
+						<div class="article__content">
+							<div class="article__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="article__slider-item swiper-slide">
+										<picture>
+											<source srcset="img/directions-2.webp"type="image/webp">
+											<source srcset="img/directions-2.jpg" type="image/jpeg">
+											<img width="600" height="400" src="img/directions-2.jpg" alt="">
+										</picture>
+									</div>
+									<div class="article__slider-item swiper-slide">
+										<picture>
+											<source srcset="img/project-3.webp"type="image/webp">
+											<source srcset="img/project-3.jpg" type="image/jpeg">
+											<img width="600" height="400" src="img/project-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="article__slider-item swiper-slide">
+										<picture>
+											<source srcset="img/project-4.webp"type="image/webp">
+											<source srcset="img/project-4.jpg" type="image/jpeg">
+											<img width="600" height="400" src="img/project-4.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+								<div class="slider-arrows">
+									<div class="slider-arrows__prev slider-arrows__prev--sm article__prev"></div>
+									<div class="slider-arrows__next slider-arrows__next--sm article__next"></div>
+								</div>
+							</div>
+							<div class="article__text">
+								<p>В Тюмени стартовал форум «Ямал. Арктика. Нефтегаз». Это единственная в стране площадка, на которой встречаются больше
+								200 руководителей компаний профильной сферы. Здесь обсуждают самую достоверную информацию о планах развития нефтегазовой
+								отрасли в ЯНАО и российской Арктике в целом. Мероприятие открыли обсуждением перспектив Тазовского месторождения.
+								Инфраструктура этого кластера создавалась в условиях жестких ограничений во время пандемии COVID-19. По оценкам
+								специалистов, здешние залежи составляют 419 миллионов тонн нефти и 225 миллиардов кубометров газа.</p>
+								<p>В Тюмени стартовал форум «Ямал. Арктика. Нефтегаз». Это единственная в стране площадка, на которой встречаются больше
+								200 руководителей компаний профильной сферы. Тазовского</p>
+								<p>Тазовского месторождения. Инфраструктура этого кластера создавалась в условиях жестких ограничений во время пандемии
+								COVID-19. По оценкам специалистов, здешние залежи составляют 419 миллионов тонн нефти и 225 миллиардов кубометров газа.
+								</p>
+								<p>В Тюмени стартовал форум «Ямал. Арктика. Нефтегаз». Это единственная в стране площадка, на которой встречаются больше
+								200 руководителей компаний профильной сферы. Здесь обсуждают самую достоверную информацию о планах развития нефтегазовой
+								отрасли в ЯНАО и российской Арктике в целом. Мероприятие открыли обсуждением перспектив Тазовского месторождения.
+								Инфраструктура этого кластера создавалась в условиях жестких ограничений во время пандемии COVID-19. По оценкам
+								специалистов, здешние залежи составляют 419 миллионов тонн нефти и 225 миллиардов кубометров газа.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="articles-slider">
+				<div class="container slider-wrapper">
+					<div class="articles-slider__inner swiper">
+						<div class="swiper-wrapper">
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-4.webp"type="image/webp">
+										<source srcset="img/news-4.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-4.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">Собянин утвердил проекты редевелопмента</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-5.webp"type="image/webp">
+										<source srcset="img/news-5.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-5.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">Пермский градсовет выбрал архитектурный</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-6.webp"type="image/webp">
+										<source srcset="img/news-6.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-6.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">ПИК построит в Екатеринбурге крупный жилой комплекс</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-4.webp"type="image/webp">
+										<source srcset="img/news-4.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-4.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">Собянин утвердил проекты редевелопмента</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-5.webp"type="image/webp">
+										<source srcset="img/news-5.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-5.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">Собянин утвердил проекты редевелопмента</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+							<div class="articles-slider__item swiper-slide">
+								<div class="articles-slider__img">
+									<div class="articles-slider__date"><time datetime="2022-10-18">18.10.2022</time></div>
+									<picture>
+										<source srcset="img/news-6.webp"type="image/webp">
+										<source srcset="img/news-6.jpg" type="image/jpeg">
+										<img width="390" height="280" src="img/news-6.jpg" alt="">
+									</picture>
+								</div>
+								<div class="articles-slider__name">Собянин утвердил проекты редевелопмента</div>
+								<a class="articles-slider__btn btn btn--sm" href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev articles-slider__prev"></div>
+						<div class="slider-arrows__next articles-slider__next"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<a class="footer__logo logo" href="#">
+							<img src="img/logo-white.svg" width="285" height="39" alt="">
+						</a>
+						<div class="footer__text">Тут какой-то текст компании, слоган, или еще что-то для сео, восможно в две или
+							три строчки, но не более.</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Проекты</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Сертификаты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navigation">
+							<ul>
+								<li><a href="#">Сферы деятельности</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/bookmark-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Как нас найти</div>
+								<div class="footer__contact-text">Москва, Соколово Мещерская ул., дом 14, строение 11</div>
+							</div>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-icon"><img width="24" height="24" src="img/mail-icon.svg" alt=""></div>
+							<div class="footer__contact-info">
+								<div class="footer__contact-caption">Написать нам</div>
+								<div class="footer__contact-text"><a href="mailto:chinastroy@info.com">chinastroy@info.com</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">© 2022 Китай Строй, Все права защищены</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/fslightbox.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/micromodal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

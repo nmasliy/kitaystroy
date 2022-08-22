@@ -132,6 +132,49 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
+	function initArticleSlider() {
+		const $articleSlider = document.querySelector('.article__slider')
+
+		if ($articleSlider) {
+			const swiper = new Swiper($articleSlider, {
+				spaceBetween: 30,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.article__next',
+					prevEl: '.article__prev',
+				},
+			})
+		}
+	}
+	function initArticlesSlider() {
+		const $articlesSlider = document.querySelector('.articles-slider__inner')
+
+		if ($articlesSlider) {
+			const swiper = new Swiper($articlesSlider, {
+				spaceBetween: 30,
+				slidesPerView: 3,
+				navigation: {
+					nextEl: '.articles-slider__next',
+					prevEl: '.articles-slider__prev',
+				},
+				breakpoints: {
+					// when window width is >= 320px
+					320: {
+						slidesPerView: 1,
+					},
+					// when window width is >= 650
+					650: {
+						slidesPerView: 2,
+					},
+					// when window width is >= 1200
+					1200: {
+						slidesPerView: 3,
+					},
+				},
+			})
+		}
+	}
+
 	function initModals() {
 		const $modals = document.querySelectorAll('.modal')
 		const $modalLicense = document.querySelector('#modal-license');
@@ -221,4 +264,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	initGetHeaderSize()
 	initHeroSlider()
 	initFilter()
+	initArticlesSlider()
+	initArticleSlider()
 })
