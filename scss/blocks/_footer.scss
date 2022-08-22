@@ -37,7 +37,8 @@
 				}
 				& > a {
 					transition: $transition;
-					&:hover {
+					&:hover,
+					&:active {
 					color: $accent;
 				}
 				}
@@ -70,7 +71,8 @@
 
 	&__contact-text {
 		font-size: 15px;
-		a:hover {
+		a:hover,
+		&:active {
 			text-decoration: underline;
 		}
 	}

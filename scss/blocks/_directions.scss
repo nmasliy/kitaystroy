@@ -38,7 +38,8 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		&:hover {
+		&:hover,
+		&:active {
 			.directions__name {
 				text-decoration: underline;
 			}

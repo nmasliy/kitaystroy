@@ -2,9 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	function initMenu() {
 		const $html = document.querySelector('html')
 		const $headerMenu = document.querySelector('.header__inner')
-		const $navLinks = $headerMenu.querySelectorAll(
-			'.navigation__list>li>a'
-		)
+		const $navLinks = $headerMenu.querySelectorAll('.navigation__list>li>a')
 		const $headerBtn = document.querySelector('.header__burger')
 		const $headerCloseBtn = document.querySelector('.header__close')
 		const $headerOverlay = document.querySelector('.header__overlay')
@@ -21,13 +19,12 @@ window.addEventListener('DOMContentLoaded', function () {
 				$headerCloseBtn.addEventListener('click', closeMenu)
 				$headerOverlay.addEventListener('click', closeMenu)
 				$navLinks.forEach(item => {
-					item.addEventListener('click', function(e) {
+					item.addEventListener('click', function (e) {
 						if (item.nextElementSibling) {
 							e.preventDefault()
 							item.closest('li').classList.toggle('active')
 							// item.nextElementSibling.classList.toggle('active')
 						}
-
 					})
 				})
 			} else {
@@ -65,8 +62,8 @@ window.addEventListener('DOMContentLoaded', function () {
 		const $header = document.querySelector('.header')
 
 		$root.style.setProperty('--header-size', $header.offsetHeight + 'px')
-		
-		window.addEventListener('resize', function() {
+
+		window.addEventListener('resize', function () {
 			$root.style.setProperty('--header-size', $header.offsetHeight + 'px')
 		})
 	}
@@ -139,10 +136,60 @@ window.addEventListener('DOMContentLoaded', function () {
 		const $modals = document.querySelectorAll('.modal')
 	}
 
-	initMenu();
+	function initFilter() {
+		const $filter = document.querySelector('.filter')
+		const $filterContent = document.querySelector('.filter__content')
+		const $filterBtn = document.querySelector('.filter__btn')
+		const $filterClose = document.querySelector('.filter__close')
+		const $filterOverlay = document.querySelector('.filter__overlay')
+		const $html = document.querySelector('html')
+
+		const TRANSITION_DELAY = 300
+		let isInit = false
+
+		const checkScreenWidth = () => {
+			const MOBILE_FILTER_BREAKPOINT = 1200
+			// Активируем фильтр только на экранах <= 1200
+			if ($filter && window.innerWidth <= MOBILE_FILTER_BREAKPOINT && !isInit) {
+				isInit = true
+				$filterBtn.addEventListener('click', openFilter)
+				$filterClose.addEventListener('click', closeFilter)
+				$filterOverlay.addEventListener('click', closeFilter)
+			} else {
+				window.addEventListener('resize', checkScreenWidth)
+			}
+		}
+
+		checkScreenWidth()
+
+		function openFilter() {
+			$filterOverlay.style.display = 'block'
+			$filterContent.style.display = 'block'
+			$html.classList.add('overflow-hidden')
+
+			setTimeout(function () {
+				$filterOverlay.classList.add('active')
+				$filterContent.classList.add('active')
+			}, 50)
+		}
+
+		function closeFilter() {
+			$filterOverlay.classList.remove('active')
+			$filterContent.classList.remove('active')
+			$html.classList.remove('overflow-hidden')
+
+			setTimeout(function () {
+				$filterOverlay.style.display = ''
+				$filterContent.style.display = ''
+			}, TRANSITION_DELAY)
+		}
+	}
+
+	initMenu()
 	// initModals();
 	initNewsSlider()
 	initProjectsSlider()
 	initGetHeaderSize()
 	initHeroSlider()
+	initFilter()
 })

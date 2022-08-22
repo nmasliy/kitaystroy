@@ -102,6 +102,7 @@
 	min-width: 193px;
 	transition: $transition;
 	position: relative;
+	z-index: 2;
 	&::before {
 		position: absolute;
 		content: '';
@@ -120,13 +121,18 @@
 			width: 100%;
 		}
 	}
+	&--sm {
+		padding: 14px 30px;
+		min-width: 153px;
+	}
 	&--flex {
 		display: flex;
 		align-items: center;
 		span {
 			margin-right: 15px;
 		}
-		&:hover {
+		&:hover,
+		&:active {
 			path {
 				fill: $white;
 			}
@@ -209,18 +215,139 @@
 		font-size: 13px;
 		line-height: 1.85;
 		transition: $transition;
-		color: #BDBDBD;
+		color: #bdbdbd;
 		& + li::before {
-			content: "/";
+			content: '/';
 			display: inline-block;
 			margin: 0 8px;
-			color: #BDBDBD;
+			color: #bdbdbd;
 		}
 		&:last-child {
-			color: #1B1B1B;
+			color: #1b1b1b;
 		}
 		&:hover {
 			color: $accentHover;
 		}
+	}
+}
+
+.pagination {
+	&--center {
+		ul {
+			justify-content: center;
+		}
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px 15px;
+	}
+	li {
+		width: 50px;
+		height: 50px;
+		background-color: $white;
+		border-radius: 6px;
+		color: #000;
+		font-size: 15px;
+		line-height: 1.3;
+		letter-spacing: 0.02em;
+		border: 1px solid #e8e8e8;
+		transition: $transition;
+		&.active {
+			background-color: #e8e8e8;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			color: $white;
+			background-color: $accent;
+			svg > path {
+				fill: $white;
+			}
+		}
+		svg > path {
+			transition: $transition;
+		}
+	}
+}
+
+.form {
+	&__checkbox {
+		margin: 15px 0;
+		& > label {
+			display: flex;
+			align-items: flex-start;
+			cursor: pointer;
+			& > input {
+				display: none;
+				&:checked ~ .form__checkbox-element {
+					background-color: $accent;
+					&::after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&__checkbox-text {
+		font-size: 15px;
+		color: $text;
+		line-height: 1.4;
+		margin-left: 15px;
+	}
+
+	&__checkbox-element {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: $white;
+		border: 1px solid #e8e8e8;
+		border-radius: 2px;
+		flex-shrink: 0;
+		position: relative;
+		transition: $transition;
+		&::after {
+			position: absolute;
+			content: '';
+			width: 11px;
+			height: 9px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: url('../img/check-icon.svg') center no-repeat;
+			transition: $transition;
+			opacity: 0;
+		}
+	}
+}
+
+.filter {
+	background-color: $white;
+	&__content {
+		border: 1px solid #e8e8e8;
+		border-radius: 10px;
+		padding: 30px;
+	}
+
+	&__btn,
+	&__close {
+		display: none;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.4;
+		margin-bottom: 25px;
+	}
+
+	&__overlay {
+		display: none;
 	}
 }

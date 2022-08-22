@@ -83,7 +83,8 @@ $menuTransition: 0.25s ease-in-out;
 				& > a {
 					display: block;
 					padding: 15px;
-					&:hover {
+					&:hover,
+					&:active {
 						text-decoration: underline;
 					}
 				}
@@ -175,7 +176,8 @@ $menuTransition: 0.25s ease-in-out;
 						line-height: 1.3;
 						transition: $transition;
 					}
-					&:hover {
+					&:hover,
+					&:active {
 						@media screen and (min-width: $mobileBreakpoint) {
 							a {
 								color: $accent;
@@ -184,7 +186,8 @@ $menuTransition: 0.25s ease-in-out;
 					}
 				}
 			}
-			&:hover {
+			&:hover,
+			&:active {
 				@media screen and (min-width: $mobileBreakpoint) {
 					background-color: $mainHover;
 					& > ul {

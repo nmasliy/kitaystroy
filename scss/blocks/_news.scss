@@ -96,7 +96,8 @@
 		line-height: 1.35;
 		margin-bottom: 10px;
 		transition: $transition;
-		&:hover {
+		&:hover,
+		&:active {
 			color: $accent;
 		}
 	}

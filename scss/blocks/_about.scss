@@ -41,7 +41,8 @@
 			transform: translate(-50%, -50%);
 			transition: $transition;
 		}
-		&:hover::before {
+		&:hover::before,
+		&:active::before {
 			background-color: $accentHover;
 		}
 		img {
