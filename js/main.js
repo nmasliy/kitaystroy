@@ -134,6 +134,35 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	function initModals() {
 		const $modals = document.querySelectorAll('.modal')
+		const $modalLicense = document.querySelector('#modal-license');
+		const $licenses = document.querySelectorAll('.licenses__item-inner')
+		
+		if ($modals.length > 0) {
+			MicroModal.init({
+				disableScroll: true,
+				awaitOpenAnimation: true,
+				awaitCloseAnimation: true,
+			})
+		}
+		
+		if ($modalLicense) {
+			const $modalText = $modalLicense.querySelector('.modal__text') 
+			const $modalName = $modalLicense.querySelector('.modal__name') 
+			const $modalImg = $modalLicense.querySelector('.modal__img') 
+
+			$licenses.forEach($item => {
+				const $text = $item.querySelector('.licenses__text')
+				const $name = $item.querySelector('.licenses__name')
+				const $img = $item.querySelector('.licenses__img')
+
+				$item.addEventListener('click', function (e) {
+					e.preventDefault()
+					$modalImg.innerHTML = $img.innerHTML;
+					$modalText.textContent = $text.textContent;
+					$modalName.textContent = $name.textContent
+				})
+			})
+		}
 	}
 
 	function initFilter() {
@@ -186,7 +215,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	initMenu()
-	// initModals();
+	initModals()
 	initNewsSlider()
 	initProjectsSlider()
 	initGetHeaderSize()
