@@ -2441,6 +2441,10 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .article__text p {
+    margin: 20px 0;
+  }
 }
 @media screen and (max-width: 450px) {
   .hero {
