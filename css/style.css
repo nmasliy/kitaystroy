@@ -2004,26 +2004,26 @@ img {
   }
 
   .news__info {
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .news-slider__img img {
     height: 280px;
   }
   .news-slider__item {
-    width: calc(50% - 12.5px);
+    width: auto;
   }
   .news-slider__item.swiper-slide-next {
-    width: calc(50% - 12.5px);
+    width: auto;
   }
   .news-slider__item.swiper-slide-next .news-slider__text {
     height: auto;
   }
   .news-slider__item.swiper-slide-next img {
-    height: 640px;
+    height: 280px;
   }
   .news-slider__item.swiper-slide-next + .swiper-slide {
-    width: calc(50% - 12.5px);
+    width: auto;
   }
   .news-slider__item.swiper-slide-next + .swiper-slide .news-slider__text {
     height: 48px;

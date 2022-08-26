@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			const swiper = new Swiper('.news-slider', {
 				spaceBetween: 25,
 				slidesPerView: 'auto',
-				slidesOffsetAfter: 150,
+				slidesOffsetAfter: 146,
 				autoHeight: true,
 				navigation: {
 					nextEl: '.news__next',
@@ -94,7 +94,17 @@ window.addEventListener('DOMContentLoaded', function () {
 					},
 					// when window width is >= 1024
 					1024: {
-						slidesOffsetAfter: 150,
+						slidesOffsetAfter: 0,
+						slidesPerView: 3,
+					},
+					1350: {
+						slidesOffsetAfter: 142,
+						spaceBetween: 20,
+						slidesPerView: 'auto',
+					},
+					1440: {
+						slidesOffsetAfter: 146,
+						spaceBetween: 25,
 						slidesPerView: 'auto',
 					},
 				},

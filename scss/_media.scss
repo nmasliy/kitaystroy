@@ -106,7 +106,7 @@
 	}
 	.news {
 		&__info {
-			max-width: 50%;
+			max-width: 100%;
 		}
 	}
 	.news-slider {
@@ -114,17 +114,17 @@
 			height: 280px;
 		}
 		&__item {
-			width: calc(50% - 12.5px);
+			width: auto;
 			&.swiper-slide-next {
 				.news-slider__text {
 					height: auto;
 				}
-				width: calc(50% - 12.5px);
+				width: auto;
 				img {
-					height: 640px;
+					height: 280px;
 				}
 				& + .swiper-slide {
-					width: calc(50% - 12.5px);
+					width: auto;
 					.news-slider__text {
 						height: 48px;
 					}
